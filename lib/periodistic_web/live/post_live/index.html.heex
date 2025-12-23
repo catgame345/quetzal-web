@@ -1,0 +1,46 @@
+<.header>
+  <span class="dark:text-white">Listing Posts</span>
+  <:actions>
+    <.link patch={~p"/posts/new"}>
+      <.button>New Post</.button>
+    </.link>
+  </:actions>
+</.header>
+
+<.table
+  id="posts"
+  rows={@streams.posts}
+  row_click={fn {_id, post} -> JS.navigate(~p"/posts/#{post}") end}
+>
+  <:col :let={{_id, post}} label="Autor">{post.autor}</:col>
+  <:col :let={{_id, post}} label="Email">{post.email}</:col>
+  <:col :let={{_id, post}} label="Texto">{String.slice(post.texto, 0, 20) <> "..."}</:col>
+  <:col :let={{_id, post}} label="Imagenes">{post.imagenes}</:col>
+  <:col :let={{_id, post}} label="Enlaces">{post.enlaces}</:col>
+  <:col :let={{_id, post}} label="Riesgo">{post.riesgo}</:col>
+  <:action :let={{_id, post}}>
+    <div class="sr-only">
+      <.link navigate={~p"/posts/#{post}"}>Show</.link>
+    </div>
+    <.link patch={~p"/posts/#{post}/edit"}>Edit</.link>
+  </:action>
+  <:action :let={{id, post}}>
+    <.link
+      phx-click={JS.push("delete", value: %{id: post.id}) |> hide("##{id}")}
+      data-confirm="Are you sure?"
+    >
+      Delete
+    </.link>
+  </:action>
+</.table>
+
+<.modal :if={@live_action in [:new, :edit]} id="post-modal" show on_cancel={JS.patch(~p"/posts")}>
+  <.live_component
+    module={PeriodisticWeb.PostLive.FormComponent}
+    id={@post.id || :new}
+    title={@page_title}
+    action={@live_action}
+    post={@post}
+    patch={~p"/posts"}
+  />
+</.modal>

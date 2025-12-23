@@ -1,0 +1,36 @@
+<header class="px-4 sm:px-6 lg:px-8">
+  <div class="flex items-center justify-between border-b border-zinc-100 py-3 text-sm">
+    <div class="flex items-center gap-4">
+      <a href="/">
+        <img src={~p"/images/Sin título.png"} width="36" />
+      </a>
+      <h3 class="text-xl font-bold">QuetzálWeb</h3>
+    </div>
+    <div class="flex items-center gap-4 font-semibold leading-6 light:text-zinc-900 dark:text-white">
+      <a
+        href="https://github.com/catgame345"
+        class="light:hover:text-esmerald-400 dark:hover:text-teal-700"
+      >
+        GitHub
+      </a>
+      <.link
+        navigate={~p"/news"}
+        class="rounded-lg light:bg-esmerald-10 dark:bg-teal-400 px-2 py-1 light:hover:bg-esmerald-100/80 dark:hover:bg-teal-600/80"
+      >
+        Noticias <span aria-hidden="true">&rarr;</span>
+      </.link>
+      <.link
+        navigate={~p"/posts/new"}
+        class="rounded-lg light:bg-esmerald-100 dark:bg-teal-500 px-2 py-1 light:hover:bg-esmerald-200/80 dark:hover:bg-teal-700/80"
+      >
+        Crear Post <span aria-hidden="true">&rarr;</span>
+      </.link>
+    </div>
+  </div>
+</header>
+<main class="px-4 py-20 sm:px-6 lg:px-8">
+  <div class="mx-auto max-w-2xl">
+    <.flash_group flash={@flash} />
+    {@inner_content}
+  </div>
+</main>

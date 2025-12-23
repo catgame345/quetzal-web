@@ -1,0 +1,4 @@
+GET https://ppx1qkjc-4000.usw3.devtunnels.ms/
+GET https://ppx1qkjc-4000.usw3.devtunnels.ms/news
+GET https://ppx1qkjc-4000.usw3.devtunnels.ms/posts
+GET https://ppx1qkjc-4000.usw3.devtunnels.ms/posts/new
