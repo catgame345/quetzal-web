@@ -57,7 +57,10 @@ defmodule Periodistic.MixProject do
       {:gettext, "~> 0.26"},
       {:jason, "~> 1.2"},
       {:dns_cluster, "~> 0.1.1"},
-      {:bandit, "~> 1.5"}
+      {:bandit, "~> 1.5"},
+      {:ex_cldr, "~> 2.46"},
+      {:ex_cldr_dates_times, "~> 2.25.5"},
+      {:ex_cldr_calendars, "~> 2.4"}
     ]
   end
 
