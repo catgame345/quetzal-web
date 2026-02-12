@@ -1,27 +1,69 @@
-<%= for post <- @posts do %>
-  <div class="bg-esmerald-900/70 p-8 rounded-lg shadow-lg">
-    <div class="text-center border border-white/40 rounded-lg p-8 bg-white/30 text-white">
-      <div>
-        <h1 class="text-2xl">Autor: <em><%= post.autor %></em></h1>
-         <br />
-        <h2 class="text-xl">Correo: <em><%= post.email %></em></h2>
-         <br /> <hr /> <br />
-        <h3 class="border border-teal-600 bg-teal-500 text-white p-5 rounded-lg"><%= post.texto %></h3>
-         <br />
-        <a href={post.enlaces} class="underline text-teal-600 hover:text-teal-800">
-          <em>Más Información</em>
-        </a>
-        <%= if post.inserted_at == post.updated_at do %>
-          <p>Creado el: <%= Cldr.DateTime.to_string!(post.inserted_at, Periodistic.Cldr, format: :long, hour_cycle: :h12)%></p>
-        <% else %>
-           <p>
-            Creado el: <%= Cldr.DateTime.to_string!(post.inserted_at, Periodistic.Cldr, format: :long, hour_cycle: :h12) %>
-          </p>
-          <p>
-            Actualizado el: <%= Cldr.DateTime.to_string!(post.updated_at, Periodistic.Cldr, format: :long, hour_cycle: :h12) %>
-          </p>
-        <% end %>
-      </div>
-    </div>
+<span
+  id="client-prefs-hook"
+  phx-hook="ClientPrefs"
+  style="display:none">
+</span>
+
+<%= if @loading do %>
+
+  <div class="text-center text-white p-8">
+    <p class="text-xl animate-pulse">
+      Cargando horario local…
+    </p>
   </div>
+
+<% else %>
+
+  <%= for post <- @posts do %>
+
+    <div class="bg-esmerald-900/70 p-8 rounded-lg shadow-lg">
+
+      <div class="text-center border border-white/40 rounded-lg p-8 bg-white/30 text-white">
+
+        <h1 class="text-2xl">
+          Autor: <em><%= post.autor %></em>
+        </h1>
+
+        <h2 class="text-xl mt-2">
+          Correo: <em><%= post.email %></em>
+        </h2>
+
+        <hr class="my-4" />
+
+        <h3 class="border border-teal-600 bg-teal-500 p-5 rounded-lg">
+          <%= post.texto %>
+        </h3>
+
+        <div class="mt-4 space-y-1 text-sm">
+
+          <p>
+            Creado el:
+            <%= format_datetime(
+              post.inserted_at,
+              @timezone,
+              @locale
+            ) %>
+          </p>
+
+          <%= if post.inserted_at != post.updated_at do %>
+
+            <p>
+              Actualizado el:
+              <%= format_datetime(
+                post.updated_at,
+                @timezone,
+                @locale
+              ) %>
+            </p>
+
+          <% end %>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  <% end %>
+
 <% end %>

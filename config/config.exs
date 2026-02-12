@@ -30,6 +30,8 @@ config :periodistic, PeriodisticWeb.Endpoint,
 # For production it's recommended to configure a different adapter
 # at the `config/runtime.exs`.
 config :periodistic, Periodistic.Mailer, adapter: Swoosh.Adapters.Local
+config :elixir, :time_zone_database, Tzdata.TimeZoneDatabase
+
 
 # Configure esbuild (the version is required)
 config :esbuild,

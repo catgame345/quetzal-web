@@ -60,7 +60,8 @@ defmodule Periodistic.MixProject do
       {:bandit, "~> 1.5"},
       {:ex_cldr, "~> 2.46"},
       {:ex_cldr_dates_times, "~> 2.25.5"},
-      {:ex_cldr_calendars, "~> 2.4"}
+      {:ex_cldr_calendars, "~> 2.4"},
+      {:tzdata, "~> 1.1"},
     ]
   end
 
