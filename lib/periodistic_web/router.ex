@@ -16,16 +16,15 @@ defmodule PeriodisticWeb.Router do
 
   scope "/", PeriodisticWeb do
     pipe_through :browser
+      live "/", PageLive, :home
+      live "/news", QutzalLive, :news
 
-    live "/", PageLive, :home
-    live "/news", QutzalLive, :news
+      live "/posts", PostLive.Index, :index
+      live "/posts/new", NewLive, :new
+      live "/posts/:id/edit", EditLive, :edit
 
-    live "/posts", PostLive.Index, :index
-    live "/posts/new", NewLive, :new
-    live "/posts/:id/edit", EditLive, :edit
-
-    live "/posts/:id", PostLive.Show, :show
-    live "/posts/:id/show/edit", PostLive.Show, :edit
+      live "/posts/:id", PostLive.Show, :show
+      live "/posts/:id/show/edit", PostLive.Show, :edit
   end
 
   # Other scopes may use custom stacks.

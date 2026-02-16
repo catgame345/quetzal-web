@@ -1,0 +1,65 @@
+#: lib/periodistic_web/components/core_components.ex:482
+#, elixir-autogen, elixir-format
+msgid "Actions"
+msgstr "Acciones"
+
+#: lib/periodistic_web/components/core_components.ex:160
+#, elixir-autogen, elixir-format
+msgid "Attempting to reconnect"
+msgstr "Esperando reconexión"
+
+#: lib/periodistic_web/live/qutzal_live.html.heex:24
+#, elixir-autogen, elixir-format
+msgid "Author"
+msgstr "Autor"
+
+#: lib/periodistic_web/live/qutzal_live.html.heex:40
+#, elixir-autogen, elixir-format
+msgid "Created at"
+msgstr "Creado el"
+
+#: lib/periodistic_web/components/core_components.ex:151
+#, elixir-autogen, elixir-format
+msgid "Error!"
+msgstr "¡Error!"
+
+#: lib/periodistic_web/components/core_components.ex:172
+#, elixir-autogen, elixir-format
+msgid "Hang in there while we get back on track"
+msgstr "Espera mientras volvemos"
+
+#: lib/periodistic_web/live/qutzal_live.html.heex:11
+#, elixir-autogen, elixir-format
+msgid "Loading news"
+msgstr "Cargando noticias"
+
+#: lib/periodistic_web/live/qutzal_live.html.heex:28
+#, elixir-autogen, elixir-format
+msgid "Post"
+msgstr "Correo"
+
+#: lib/periodistic_web/components/core_components.ex:167
+#, elixir-autogen, elixir-format
+msgid "Something went wrong!"
+msgstr "¡Algo salío mal!"
+
+#: lib/periodistic_web/components/core_components.ex:150
+#, elixir-autogen, elixir-format
+msgid "Success!"
+msgstr "¡Listo!"
+
+#: lib/periodistic_web/live/qutzal_live.html.heex:51
+#, elixir-autogen, elixir-format
+msgid "Updated at"
+msgstr "Actualizado el"
+
+#: lib/periodistic_web/components/core_components.ex:155
+#, elixir-autogen, elixir-format
+msgid "We can't find the internet"
+msgstr "No podemos conectarnos a internet"
+
+#: lib/periodistic_web/components/core_components.ex:76
+#: lib/periodistic_web/components/core_components.ex:130
+#, elixir-autogen, elixir-format
+msgid "close"
+msgstr "cerrar"

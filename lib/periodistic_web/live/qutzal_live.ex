@@ -9,12 +9,18 @@ defmodule PeriodisticWeb.QutzalLive do
 
     posts = Data.list_posts()
 
+    # Idioma por defecto
+    default_locale = "es"
+
+    Gettext.put_locale(PeriodisticWeb.Gettext, default_locale)
+
     {:ok,
      socket
      |> assign(:page_title, "News")
      |> assign(:posts, posts)
      |> assign(:timezone, "UTC")
-     |> assign(:locale, "es")
+     |> assign(:locale, default_locale)
+     |> assign(:gettext_locale, default_locale) # <-- CLAVE
      |> assign(:loading, true)}
   end
 
@@ -27,12 +33,20 @@ defmodule PeriodisticWeb.QutzalLive do
 
     tz = normalize_timezone(tz)
     locale = normalize_locale(locale)
+    local = normalize_local(locale)
 
-    {:noreply,
-     socket
-     |> assign(:timezone, tz)
-     |> assign(:locale, locale)
-     |> assign(:loading, false)}
+    # IMPORTANTE: fijar locale en proceso
+    Gettext.put_locale(PeriodisticWeb.Gettext, local)
+    Cldr.put_locale(Periodistic.Cldr, locale)
+
+    socket =
+      socket
+      |> assign(:timezone, tz)
+      |> assign(:locale, locale)
+      |> assign(:gettext_locale, local)
+      |> assign(:loading, false)
+
+    {:noreply, socket}
   end
 
 
@@ -62,6 +76,7 @@ defmodule PeriodisticWeb.QutzalLive do
       _ -> "es"
     end
   end
+
   defp format_datetime(datetime, tz, locale) do
     with {:ok, local} <- DateTime.shift_zone(datetime, tz) do
       Cldr.DateTime.to_string!(
@@ -73,5 +88,20 @@ defmodule PeriodisticWeb.QutzalLive do
     else
       _ -> "—"
     end
+  end
+
+  defp normalize_local(locale) do
+    locale =
+      case locale do
+        %Cldr.LanguageTag{} -> Cldr.LanguageTag.to_string(locale)
+        %_{} -> to_string(locale)
+        other -> other
+      end
+
+    locale
+    |> String.replace("_", "-")
+    |> String.downcase()
+    |> String.split("-")
+    |> hd()
   end
 end

@@ -1,0 +1,65 @@
+#: lib/periodistic_web/components/core_components.ex:482
+#, elixir-autogen, elixir-format
+msgid "Actions"
+msgstr "アクション"
+
+#: lib/periodistic_web/components/core_components.ex:160
+#, elixir-autogen, elixir-format
+msgid "Attempting to reconnect"
+msgstr "再接続を試行しています"
+
+#: lib/periodistic_web/live/qutzal_live.html.heex:24
+#, elixir-autogen, elixir-format
+msgid "Author"
+msgstr "著者"
+
+#: lib/periodistic_web/live/qutzal_live.html.heex:40
+#, elixir-autogen, elixir-format
+msgid "Created at"
+msgstr "で作成されました"
+
+#: lib/periodistic_web/components/core_components.ex:151
+#, elixir-autogen, elixir-format
+msgid "Error!"
+msgstr "エラー！"
+
+#: lib/periodistic_web/components/core_components.ex:172
+#, elixir-autogen, elixir-format
+msgid "Hang in there while we get back on track"
+msgstr "軌道に戻るまで頑張ってください"
+
+#: lib/periodistic_web/live/qutzal_live.html.heex:11
+#, elixir-autogen, elixir-format
+msgid "Loading news"
+msgstr "ニュースを読み込んでいます"
+
+#: lib/periodistic_web/live/qutzal_live.html.heex:28
+#, elixir-autogen, elixir-format
+msgid "Post"
+msgstr "郵便"
+
+#: lib/periodistic_web/components/core_components.ex:167
+#, elixir-autogen, elixir-format
+msgid "Something went wrong!"
+msgstr "何か問題が発生しました!"
+
+#: lib/periodistic_web/components/core_components.ex:150
+#, elixir-autogen, elixir-format
+msgid "Success!"
+msgstr "成功！"
+
+#: lib/periodistic_web/live/qutzal_live.html.heex:51
+#, elixir-autogen, elixir-format
+msgid "Updated at"
+msgstr "更新日時"
+
+#: lib/periodistic_web/components/core_components.ex:155
+#, elixir-autogen, elixir-format
+msgid "We can't find the internet"
+msgstr "インターネットが見つかりません"
+
+#: lib/periodistic_web/components/core_components.ex:76
+#: lib/periodistic_web/components/core_components.ex:130
+#, elixir-autogen, elixir-format
+msgid "close"
+msgstr "近い"

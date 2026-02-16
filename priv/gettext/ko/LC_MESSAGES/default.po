@@ -1,0 +1,65 @@
+#: lib/periodistic_web/components/core_components.ex:482
+#, elixir-autogen, elixir-format
+msgid "Actions"
+msgstr "행위"
+
+#: lib/periodistic_web/components/core_components.ex:160
+#, elixir-autogen, elixir-format
+msgid "Attempting to reconnect"
+msgstr "다시 연결을 시도하는 중"
+
+#: lib/periodistic_web/live/qutzal_live.html.heex:24
+#, elixir-autogen, elixir-format
+msgid "Author"
+msgstr "작가"
+
+#: lib/periodistic_web/live/qutzal_live.html.heex:40
+#, elixir-autogen, elixir-format
+msgid "Created at"
+msgstr "생성 날짜"
+
+#: lib/periodistic_web/components/core_components.ex:151
+#, elixir-autogen, elixir-format
+msgid "Error!"
+msgstr "오류!"
+
+#: lib/periodistic_web/components/core_components.ex:172
+#, elixir-autogen, elixir-format
+msgid "Hang in there while we get back on track"
+msgstr "정상화될 때까지 조금만 기다려 주세요."
+
+#: lib/periodistic_web/live/qutzal_live.html.heex:11
+#, elixir-autogen, elixir-format
+msgid "Loading news"
+msgstr "뉴스 로드 중"
+
+#: lib/periodistic_web/live/qutzal_live.html.heex:28
+#, elixir-autogen, elixir-format
+msgid "Post"
+msgstr "우편"
+
+#: lib/periodistic_web/components/core_components.ex:167
+#, elixir-autogen, elixir-format
+msgid "Something went wrong!"
+msgstr "문제가 발생했습니다."
+
+#: lib/periodistic_web/components/core_components.ex:150
+#, elixir-autogen, elixir-format
+msgid "Success!"
+msgstr "성공!"
+
+#: lib/periodistic_web/live/qutzal_live.html.heex:51
+#, elixir-autogen, elixir-format
+msgid "Updated at"
+msgstr "업데이트 날짜"
+
+#: lib/periodistic_web/components/core_components.ex:155
+#, elixir-autogen, elixir-format
+msgid "We can't find the internet"
+msgstr "인터넷을 찾을 수 없어요"
+
+#: lib/periodistic_web/components/core_components.ex:76
+#: lib/periodistic_web/components/core_components.ex:130
+#, elixir-autogen, elixir-format
+msgid "close"
+msgstr "닫다"
