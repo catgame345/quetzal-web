@@ -20,7 +20,7 @@ defmodule PeriodisticWeb.QutzalLive do
      |> assign(:posts, posts)
      |> assign(:timezone, "UTC")
      |> assign(:locale, default_locale)
-     |> assign(:gettext_locale, default_locale) # <-- CLAVE
+     |> assign(:gettext_locale, default_locale)
      |> assign(:loading, true)}
   end
 
@@ -35,7 +35,6 @@ defmodule PeriodisticWeb.QutzalLive do
     locale = normalize_locale(locale)
     local = normalize_local(locale)
 
-    # IMPORTANTE: fijar locale en proceso
     Gettext.put_locale(PeriodisticWeb.Gettext, local)
     Cldr.put_locale(Periodistic.Cldr, locale)
 

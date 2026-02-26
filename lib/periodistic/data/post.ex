@@ -8,6 +8,7 @@ defmodule Periodistic.Data.Post do
     field :texto, :string
     field :imagenes, :string
     field :enlaces, :string
+    field :title, :string
     field :riesgo, :boolean, default: false
 
     timestamps(type: :utc_datetime)
@@ -16,7 +17,7 @@ defmodule Periodistic.Data.Post do
   @doc false
   def changeset(post, attrs) do
     post
-    |> cast(attrs, [:autor, :email, :texto, :imagenes, :enlaces, :riesgo])
-    |> validate_required([:autor, :email, :texto, :enlaces, :riesgo])
+    |> cast(attrs, [:autor, :email, :texto, :imagenes, :enlaces, :riesgo, :title])
+    |> validate_required([:autor, :email, :texto, :enlaces, :riesgo, :title])
   end
 end

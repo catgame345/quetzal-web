@@ -7,9 +7,8 @@ defmodule PeriodisticWeb.PostLive.FormComponent do
   def render(assigns) do
     ~H"""
     <div>
-      <h1 class="text-3xl font-bold text-center">{@title}</h1>
+      <h1 class="text-3xl font-bold text-center"><%= gettext("New post") %></h1>
       <br />
-      <p class="text-center">Use this form to manage post records in your database.</p>
       <.simple_form
         for={@form}
         id="post-form"
@@ -17,14 +16,15 @@ defmodule PeriodisticWeb.PostLive.FormComponent do
         phx-change="validate"
         phx-submit="save"
       >
-        <.input field={@form[:autor]} type="text" label="Autor" />
-        <.input field={@form[:email]} type="text" label="Email" />
-        <.input field={@form[:texto]} type="textarea" label="Texto" />
-        <.input field={@form[:imagenes]} type="text" label="Imagenes" />
-        <.input field={@form[:enlaces]} type="text" label="Enlaces" />
-        <.input field={@form[:riesgo]} type="checkbox" label="Riesgo" />
+        <.input field={@form[:title]} type="text" label={gettext("Title")} />
+        <.input field={@form[:autor]} type="text" label={gettext("Author")} />
+        <.input field={@form[:email]} type="text" label={gettext("Post")} />
+        <.input field={@form[:texto]} type="textarea" label={gettext("Text")} />
+        <.input field={@form[:imagenes]} type="text" label={gettext("Images")} />
+        <.input field={@form[:enlaces]} type="text" label={gettext("Links")} />
+        <.input field={@form[:riesgo]} type="checkbox" label={gettext("Risk")} />
         <:actions>
-          <.button phx-disable-with="Saving...">Save Post</.button>
+          <.button phx-disable-with={gettext("Saving...")}><%= gettext("Save post") %></.button>
         </:actions>
       </.simple_form>
     </div>

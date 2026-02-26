@@ -12,16 +12,16 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 msgid "can't be blank"
-msgstr ""
+msgstr "No puede estár vacío."
 
 msgid "has already been taken"
 msgstr ""
 
 msgid "is invalid"
-msgstr ""
+msgstr "Es invalido"
 
 msgid "must be accepted"
-msgstr ""
+msgstr "Debe de ser aceptado"
 
 msgid "has invalid format"
 msgstr ""

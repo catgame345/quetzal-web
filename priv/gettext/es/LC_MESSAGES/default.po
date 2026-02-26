@@ -8,12 +8,13 @@ msgstr "Acciones"
 msgid "Attempting to reconnect"
 msgstr "Esperando reconexión"
 
-#: lib/periodistic_web/live/qutzal_live.html.heex:24
+#: lib/periodistic_web/live/post_live/form_component.ex:20
+#: lib/periodistic_web/live/qutzal_live.html.heex:29
 #, elixir-autogen, elixir-format
 msgid "Author"
 msgstr "Autor"
 
-#: lib/periodistic_web/live/qutzal_live.html.heex:40
+#: lib/periodistic_web/live/qutzal_live.html.heex:45
 #, elixir-autogen, elixir-format
 msgid "Created at"
 msgstr "Creado el"
@@ -28,12 +29,13 @@ msgstr "¡Error!"
 msgid "Hang in there while we get back on track"
 msgstr "Espera mientras volvemos"
 
-#: lib/periodistic_web/live/qutzal_live.html.heex:11
+#: lib/periodistic_web/live/qutzal_live.html.heex:12
 #, elixir-autogen, elixir-format
 msgid "Loading news"
 msgstr "Cargando noticias"
 
-#: lib/periodistic_web/live/qutzal_live.html.heex:28
+#: lib/periodistic_web/live/post_live/form_component.ex:21
+#: lib/periodistic_web/live/qutzal_live.html.heex:33
 #, elixir-autogen, elixir-format
 msgid "Post"
 msgstr "Correo"
@@ -48,7 +50,7 @@ msgstr "¡Algo salío mal!"
 msgid "Success!"
 msgstr "¡Listo!"
 
-#: lib/periodistic_web/live/qutzal_live.html.heex:51
+#: lib/periodistic_web/live/qutzal_live.html.heex:56
 #, elixir-autogen, elixir-format
 msgid "Updated at"
 msgstr "Actualizado el"
@@ -63,3 +65,53 @@ msgstr "No podemos conectarnos a internet"
 #, elixir-autogen, elixir-format
 msgid "close"
 msgstr "cerrar"
+
+#: lib/periodistic_web/components/layouts/app.html.heex:26
+#, elixir-autogen, elixir-format, fuzzy
+msgid "Create post"
+msgstr "Crear noticia"
+
+#: lib/periodistic_web/components/layouts/app.html.heex:20
+#, elixir-autogen, elixir-format
+msgid "News"
+msgstr "Noticias"
+
+#: lib/periodistic_web/live/post_live/form_component.ex:23
+#, elixir-autogen, elixir-format
+msgid "Images"
+msgstr "Imágenes"
+
+#: lib/periodistic_web/live/post_live/form_component.ex:24
+#, elixir-autogen, elixir-format
+msgid "Links"
+msgstr "Enlaces"
+
+#: lib/periodistic_web/live/post_live/form_component.ex:10
+#, elixir-autogen, elixir-format, fuzzy
+msgid "New post"
+msgstr "Noticias"
+
+#: lib/periodistic_web/live/post_live/form_component.ex:25
+#, elixir-autogen, elixir-format
+msgid "Risk"
+msgstr "Riesgo"
+
+#: lib/periodistic_web/live/post_live/form_component.ex:27
+#, elixir-autogen, elixir-format
+msgid "Save post"
+msgstr "Guardar noticia"
+
+#: lib/periodistic_web/live/post_live/form_component.ex:22
+#, elixir-autogen, elixir-format
+msgid "Text"
+msgstr "Texto"
+
+#: lib/periodistic_web/live/post_live/form_component.ex:19
+#, elixir-autogen, elixir-format
+msgid "Title"
+msgstr "Título"
+
+#: lib/periodistic_web/live/post_live/form_component.ex:27
+#, elixir-autogen, elixir-format
+msgid "Saving..."
+msgstr "Guardando..."

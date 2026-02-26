@@ -8,6 +8,7 @@ defmodule Periodistic.Repo.Migrations.CreatePosts do
       add :texto, :text
       add :imagenes, :string
       add :enlaces, :string
+      add :title, :string
       add :riesgo, :boolean, default: false, null: false
 
       timestamps(type: :utc_datetime)

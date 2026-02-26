@@ -8,12 +8,13 @@ msgstr "アクション"
 msgid "Attempting to reconnect"
 msgstr "再接続を試行しています"
 
-#: lib/periodistic_web/live/qutzal_live.html.heex:24
+#: lib/periodistic_web/live/post_live/form_component.ex:20
+#: lib/periodistic_web/live/qutzal_live.html.heex:29
 #, elixir-autogen, elixir-format
 msgid "Author"
 msgstr "著者"
 
-#: lib/periodistic_web/live/qutzal_live.html.heex:40
+#: lib/periodistic_web/live/qutzal_live.html.heex:45
 #, elixir-autogen, elixir-format
 msgid "Created at"
 msgstr "で作成されました"
@@ -28,12 +29,13 @@ msgstr "エラー！"
 msgid "Hang in there while we get back on track"
 msgstr "軌道に戻るまで頑張ってください"
 
-#: lib/periodistic_web/live/qutzal_live.html.heex:11
+#: lib/periodistic_web/live/qutzal_live.html.heex:12
 #, elixir-autogen, elixir-format
 msgid "Loading news"
 msgstr "ニュースを読み込んでいます"
 
-#: lib/periodistic_web/live/qutzal_live.html.heex:28
+#: lib/periodistic_web/live/post_live/form_component.ex:21
+#: lib/periodistic_web/live/qutzal_live.html.heex:33
 #, elixir-autogen, elixir-format
 msgid "Post"
 msgstr "郵便"
@@ -48,7 +50,7 @@ msgstr "何か問題が発生しました!"
 msgid "Success!"
 msgstr "成功！"
 
-#: lib/periodistic_web/live/qutzal_live.html.heex:51
+#: lib/periodistic_web/live/qutzal_live.html.heex:56
 #, elixir-autogen, elixir-format
 msgid "Updated at"
 msgstr "更新日時"
@@ -63,3 +65,53 @@ msgstr "インターネットが見つかりません"
 #, elixir-autogen, elixir-format
 msgid "close"
 msgstr "近い"
+
+#: lib/periodistic_web/components/layouts/app.html.heex:26
+#, elixir-autogen, elixir-format, fuzzy
+msgid "Create post"
+msgstr "で作成されました"
+
+#: lib/periodistic_web/components/layouts/app.html.heex:20
+#, elixir-autogen, elixir-format
+msgid "News"
+msgstr "ニュース"
+
+#: lib/periodistic_web/live/post_live/form_component.ex:23
+#, elixir-autogen, elixir-format
+msgid "Images"
+msgstr "画像"
+
+#: lib/periodistic_web/live/post_live/form_component.ex:24
+#, elixir-autogen, elixir-format
+msgid "Links"
+msgstr "リンク"
+
+#: lib/periodistic_web/live/post_live/form_component.ex:10
+#, elixir-autogen, elixir-format, fuzzy
+msgid "New post"
+msgstr "ニュース"
+
+#: lib/periodistic_web/live/post_live/form_component.ex:25
+#, elixir-autogen, elixir-format
+msgid "Risk"
+msgstr "危険"
+
+#: lib/periodistic_web/live/post_live/form_component.ex:27
+#, elixir-autogen, elixir-format
+msgid "Save post"
+msgstr "投稿を保存する"
+
+#: lib/periodistic_web/live/post_live/form_component.ex:22
+#, elixir-autogen, elixir-format
+msgid "Text"
+msgstr "テキスト"
+
+#: lib/periodistic_web/live/post_live/form_component.ex:19
+#, elixir-autogen, elixir-format
+msgid "Title"
+msgstr "タイトル"
+
+#: lib/periodistic_web/live/post_live/form_component.ex:27
+#, elixir-autogen, elixir-format
+msgid "Saving..."
+msgstr "保存中..."
